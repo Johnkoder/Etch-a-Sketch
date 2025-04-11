@@ -1,5 +1,22 @@
-const container = document.querySelector('#container');
-const box = document.createElement('div');
-box.setAttribute('class', 'box');
+function renderCanvas() {
+    const container = document.querySelector('#container');
 
-container.appendChild(box);
+
+    for(i = 0; i < 256; i++) {
+        const box = document.createElement('div');
+        box.setAttribute('class', 'box');
+        container.appendChild(box);
+        console.log(i)
+    }
+
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach(box => {
+        box.addEventListener('mouseover', () => {
+            box.classList.add('colored');
+        })
+    })
+    
+}
+
+renderCanvas();
