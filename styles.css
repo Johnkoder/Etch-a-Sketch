@@ -10,20 +10,31 @@ body {
     align-items: center;
 }
 
+section {
+    padding: 10px 10px;
+}
+
+section input {
+    padding: 10px;
+}
+
+section button {
+    padding: 5px 10px;
+}
+
 #container {
-    width: 576px;
-    height: 576px;
+    width: 960px;
+    height: 960px;
     background-color: rgb(229, 229, 229);
     display: flex;
     flex-wrap: wrap;
-    gap: 1px 1px;
     box-sizing: initial;
     border: 5px solid rgb(105, 105, 105);
 }
 
 .box {
     background-color: rgb(255, 255, 255);
-    flex: 1 0 35px;
+    border: 1px solid rgb(246, 246, 246);
 }
 
 .colored {
